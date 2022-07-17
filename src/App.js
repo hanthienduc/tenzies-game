@@ -139,6 +139,7 @@ function App() {
     e.preventDefault();
     try {
       let res = await fetch("https://tenzie-project.vercel.app/api/add-score", {
+        mode: 'no-cors',
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
