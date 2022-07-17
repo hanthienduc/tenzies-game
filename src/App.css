@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 body {
   background-color: #0b2434;
   padding: 20px;
@@ -77,4 +80,42 @@ code {
 
 .held {
   background-color: #5035FF;
+  color: white;
+}
+
+.display-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.display-data h4 {
+  margin-right: 1rem;
+}
+
+.form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form input{
+  padding: 5px;
+  outline: none;
+}
+.form button{
+  margin-left: 0.5rem;
+  border: none;
+  background-color: #5035FF;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.form button:hover {
+  background-color: #3a29a7;
+}
+
+.error {
+  color: red;
 }
